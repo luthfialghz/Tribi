@@ -1,4 +1,4 @@
-package com.example.tribiandroid.ui
+package com.example.tribiandroid.ui.intro
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

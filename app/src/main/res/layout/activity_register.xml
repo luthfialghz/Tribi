@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_bg"
     tools:context=".ui.authentication.RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logoPage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_registerTitle"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/register_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logoPage" />
+
+        <ImageButton
+            android:id="@+id/btn_connectFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_registerTitle"
+            app:srcCompat="@drawable/continue_facebook" />
+
+        <ImageButton
+            android:id="@+id/btn_connectGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectFacebook"
+            app:srcCompat="@drawable/continue_google" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Atau dengan"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/btn_connectGoogle"
+            app:layout_constraintStart_toStartOf="@+id/btn_connectGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectGoogle" />
+
+        <ImageView
+            android:id="@+id/iv_lineOr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/line_or"
+            app:layout_constraintEnd_toStartOf="@+id/tv_or"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectGoogle" />
+
+        <ImageView
+            android:id="@+id/iv_lineOr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/line_or"
+            app:layout_constraintEnd_toEndOf="@+id/btn_connectGoogle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_or"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectGoogle" />
+
+        <ImageButton
+            android:id="@+id/btn_connectEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/iv_lineOr2"
+            app:layout_constraintStart_toStartOf="@+id/iv_lineOr1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_or"
+            app:srcCompat="@drawable/continue_email" />
+
+        <TextView
+            android:id="@+id/tv_registerQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="107dp"
+            android:fontFamily="@font/opensans_light"
+            android:text="Memiliki akun kontributor? "
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_or"
+            app:layout_constraintStart_toStartOf="@+id/btn_connectEmail"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectEmail" />
+
+        <TextView
+            android:id="@+id/tv_registerAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="107dp"
+            android:fontFamily="@font/opensans_light"
+            android:text="Masuk disini!"
+            android:textColor="@color/purple_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_registerQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/btn_connectEmail" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

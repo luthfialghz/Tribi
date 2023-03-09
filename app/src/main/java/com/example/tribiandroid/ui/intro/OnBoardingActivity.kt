@@ -1,4 +1,4 @@
-package com.example.tribiandroid.ui
+package com.example.tribiandroid.ui.intro
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,9 +11,7 @@ import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tribiandroid.R
 import com.example.tribiandroid.databinding.ActivityOnBoardingBinding
-import com.example.tribiandroid.ui.authentication.LoginActivity
-import com.example.tribiandroid.ui.intro.IntroSlide
-import com.example.tribiandroid.ui.intro.IntroSliderAdapter
+import com.example.tribiandroid.ui.authentication.RegisterActivity
 
 class OnBoardingActivity : AppCompatActivity() {
 
@@ -63,7 +61,7 @@ class OnBoardingActivity : AppCompatActivity() {
             if(binding.introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount){
                 binding.introSliderViewPager.currentItem += 1
             } else {
-                Intent(applicationContext, LoginActivity::class.java).also {
+                Intent(applicationContext, RegisterActivity::class.java).also {
                     startActivity(it)
                     finish()
                 }

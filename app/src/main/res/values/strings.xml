@@ -10,4 +10,7 @@
 
     <!--Login-->
     <string name="login_title">Selamat datang kontributor!</string>
+
+    <!--Register-->
+    <string name="register_title">Gabung sebagai kontributor</string>
 </resources>

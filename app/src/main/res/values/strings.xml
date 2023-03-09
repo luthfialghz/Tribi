@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tribi (Android)</string>
+
+    <!--Splash Screen-->
+    <string name="logo_caption">Nothing in life is more important than the ability to communicate effectively.</string>
+
+    <!--On Boarding-->
+    <string name="onboarding_title1">Terjemahkan SIBI</string>
+    <string name="onboarding_caption1">Membantu memahami Sistem Isyarat Bahasa Indonesia (SIBI) untuk berkomunikasi dengan teman tuli lebih efisien</string>
+
+    <!--Login-->
+    <string name="login_title">Selamat datang kontributor!</string>
+</resources>

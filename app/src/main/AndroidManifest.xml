@@ -13,7 +13,21 @@
         android:theme="@style/Theme.TribiAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".ui.HomepageActivity"
+            android:name=".ui.SettingsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.TranslateActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

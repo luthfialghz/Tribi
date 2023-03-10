@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepage"
+        android:icon="@drawable/icon_home_unselected"
+        android:title="Home"
+        app:cnb_iconColor="@color/purple_bold"/>
+    <item android:title="Translate"
+        android:id="@+id/translate"
+        android:icon="@drawable/icon_translate_unselected"
+        app:cnb_iconColor="@color/purple_bold"/>
+    <item android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/icon_settings_unselected"
+        app:cnb_iconColor="@color/purple_bold"/>
+</menu>

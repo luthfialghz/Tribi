@@ -3,8 +3,8 @@ package com.example.tribiandroid.ui.authentication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.tribiandroid.R
 import com.example.tribiandroid.databinding.ActivityRegisterEmailBinding
+import com.example.tribiandroid.ui.MainActivity
 
 class RegisterEmailActivity : AppCompatActivity() {
 
@@ -24,6 +24,12 @@ class RegisterEmailActivity : AppCompatActivity() {
 
         binding.tvRegisterAnswer.setOnClickListener {
             Intent(applicationContext, LoginActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnRegister.setOnClickListener {
+            Intent(applicationContext, MainActivity::class.java).also {
                 startActivity(it)
             }
         }

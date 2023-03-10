@@ -46,8 +46,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    //Kotlin Navigation Fragment
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
+    //Chip Bottom Navigation Bar
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+
+    def camerax_version = "1.0.0-beta07"
+
+// CameraX core library using camera2 implementation
+
+    implementation ("androidx.camera:camera-camera2:$camerax_version")
+
+// CameraX Lifecycle Library
+
+    implementation ("androidx.camera:camera-lifecycle:$camerax_version")
+
+// CameraX View class
+
+    implementation ("androidx.camera:camera-view:1.0.0-alpha14")
 }

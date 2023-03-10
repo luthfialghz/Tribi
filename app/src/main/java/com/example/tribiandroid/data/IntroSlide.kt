@@ -1,4 +1,4 @@
-package com.example.tribiandroid.ui.intro
+package com.example.tribiandroid.data
 
 data class IntroSlide (
     val title: String,

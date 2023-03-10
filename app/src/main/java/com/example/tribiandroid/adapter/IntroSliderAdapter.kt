@@ -1,13 +1,13 @@
-package com.example.tribiandroid.ui.intro
+package com.example.tribiandroid.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tribiandroid.R
+import com.example.tribiandroid.data.IntroSlide
 
 class IntroSliderAdapter(private val introSlides: List<IntroSlide>):
     RecyclerView.Adapter<IntroSliderAdapter.IntroSliderViewHolder>(){

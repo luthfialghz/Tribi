@@ -22,5 +22,11 @@ class RegisterActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        binding.btnConnectEmail.setOnClickListener {
+            Intent(applicationContext, RegisterEmailActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 }

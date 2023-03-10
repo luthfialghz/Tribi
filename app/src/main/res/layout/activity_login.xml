@@ -50,11 +50,12 @@
             android:inputType="textEmailAddress"
             android:paddingLeft="20sp"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_loginTitle"
             tools:inputType="textEmailAddress"
-            tools:textSize="14sp" />
+            tools:textSize="12sp" />
 
         <EditText
             android:id="@+id/et_password"
@@ -68,13 +69,14 @@
             android:fontFamily="@font/opensans_light"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingLeft="20sp"
+            android:paddingLeft="20dp"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_emailAddress"
             tools:inputType="textPassword"
-            tools:textSize="14sp" />
+            tools:textSize="12sp" />
 
         <CheckBox
             android:id="@+id/cb_remember"

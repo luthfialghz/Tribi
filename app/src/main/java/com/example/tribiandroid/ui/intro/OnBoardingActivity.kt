@@ -10,6 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tribiandroid.R
+import com.example.tribiandroid.adapter.IntroSliderAdapter
+import com.example.tribiandroid.data.IntroSlide
 import com.example.tribiandroid.databinding.ActivityOnBoardingBinding
 import com.example.tribiandroid.ui.authentication.RegisterActivity
 

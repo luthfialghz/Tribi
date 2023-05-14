@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -55,12 +57,16 @@ class TranslateFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val view = inflater!!.inflate(R.layout.fragment_translate, container, false)
         return inflater.inflate(R.layout.fragment_translate, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val voiceButton = view.findViewById<ImageButton>(R.id.btn_voice)
+        voiceButton.setOnClickListener {
+            voiceButton.setImageResource(R.drawable.btn_voice)
+        }
         // Request camera permissions
         if (allPermissionsGranted()) {
             Toast.makeText(safeContext, "Permissions granted by the user.", Toast.LENGTH_SHORT).show()

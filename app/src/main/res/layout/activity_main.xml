@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MainActivity"
+    android:background="@color/white_bg">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager_nav"
@@ -18,14 +19,15 @@
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottom_nav_view"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:background="#fff"
+        android:background="@drawable/rectangle_bottom_nav"
         android:fadingEdge="horizontal"
         app:cnb_menuResource="@menu/bottom_nav"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

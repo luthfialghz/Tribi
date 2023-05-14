@@ -6,7 +6,7 @@
         android:id="@+id/homepage"
         android:icon="@drawable/icon_home_unselected"
         android:title="Home"
-        app:cnb_iconColor="@color/purple_bold"/>
+        app:cnb_iconColor="@color/purple_bold" />
     <item android:title="Translate"
         android:id="@+id/translate"
         android:icon="@drawable/icon_translate_unselected"
